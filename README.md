@@ -6,9 +6,9 @@ AngularJS Datetime Filter
 [AngularJS](angularjs.org) filters for filtering arrays.
 The filters may be used just like the native filter-filter.
 
-`| __upcoming:date__` filters for array elements which date property is in the future.
+`upcoming:date` filters for array elements which date property is in the future.
 
-`| __past:date__` filters for array elements which date property is in the past.
+`past:date` filters for array elements which date property is in the past.
 
 ##Install
 Install with `bower`:

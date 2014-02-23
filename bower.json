@@ -1,0 +1,8 @@
+{
+  "name": "angular-datetime-filter",
+  "version": "0.1.0",
+  "main": "./dist/angular-datetime-filter.js",
+  "dependencies": {
+    "angular": "1.2.x"
+  }
+}

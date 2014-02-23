@@ -92,12 +92,11 @@ module.exports = function(grunt) {
       options: {
         files: ['package.json', 'bower.json'],
         updateConfigs: ['pkg'],
-        commit: true,
         commitMessage: 'release v%VERSION%',
-        commitFiles: ['-a'], // '-a' for all files
+        commitFiles: ['-a'],
         tagName: 'v%VERSION%',
         tagMessage: 'version %VERSION%',
-        push: false
+        push: true
       }
     }
   });
@@ -142,10 +141,10 @@ module.exports = function(grunt) {
   });
 
   // bump tasks
-  grunt.registerTask('version-patch', ['build', 'bump:patch']);
-  grunt.registerTask('version-minor', ['build', 'bump:minor']);
-  grunt.registerTask('version-major', ['build', 'bump:major']);
-  grunt.registerTask('version-build', ['build', 'bump:build']);
-  grunt.registerTask('version-git'  , ['build', 'bump:git']);
+  grunt.registerTask('version-patch', ['bump-only:patch', 'build', 'bump-commit']);
+  grunt.registerTask('version-minor', ['bump-only:minor', 'build', 'bump-commit']);
+  grunt.registerTask('version-major', ['bump-only:major', 'build', 'bump-commit']);
+  grunt.registerTask('version-build', ['bump-only:build', 'build', 'bump-commit']);
+  grunt.registerTask('version-git'  , ['bump-only:git'  , 'build', 'bump-commit']);
 
 };

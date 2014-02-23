@@ -1,6 +1,6 @@
 {
   "name": "angular-datetime-filter",
-  "version": "0.1.2-3",
+  "version": "0.1.2-4",
   "main": "dist/angular-datetime-filter.js",
   "ignore": [
     ".gitignore",

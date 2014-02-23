@@ -94,7 +94,7 @@ module.exports = function(grunt) {
         updateConfigs: ['pkg'],
         commit: true,
         commitMessage: 'release v%VERSION%',
-        commitFiles: ['package.json', 'bower.json', 'dist/*'], // '-a' for all files
+        commitFiles: ['-a'], // '-a' for all files
         tagName: 'v%VERSION%',
         tagMessage: 'version %VERSION%',
         push: false

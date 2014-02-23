@@ -88,7 +88,22 @@ module.exports = function(grunt) {
         configFile: 'test/karma.conf.js'
       }
     }
+    bump: {
+      options: {
+        files: ['package.json'],
+        updateConfigs: ['pkg'],
+        commit: true,
+        commitMessage: 'release v%VERSION%',
+        commitFiles: ['package.json'], // '-a' for all files
+        tagName: 'v%VERSION%',
+        tagMessage: 'version %VERSION%',
+        push: false
+      }
+    }
   });
+
+  // Load grunt versioning
+  grunt.loadNpmTasks('grunt-bump');
 
   // Load the plugin that provides the "jshint" task.
   grunt.loadNpmTasks('grunt-contrib-jshint');

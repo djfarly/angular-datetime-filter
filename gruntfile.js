@@ -87,7 +87,7 @@ module.exports = function(grunt) {
       options: {
         configFile: 'test/karma.conf.js'
       }
-    }
+    },
     bump: {
       options: {
         files: ['package.json'],

@@ -1,6 +1,6 @@
 /**
  * Angular Datetime Filter
- * @version v0.1.0 - 2014-02-23
+ * @version v0.1.2 - 2014-02-23
  * @link https://github.com/djfarly/angular-datetime-filter
  * @author Jan Willem Henckel (djfarly)
  * @license MIT License, http://www.opensource.org/licenses/MIT
@@ -10,7 +10,7 @@
 /**
 * datetimeFilter Module
 *
-* Description
+* 'upcoming' and 'past' are decorators for the 'datetimeFilter'-filter
 */
 angular.module('datetimeFilter', [])
     .filter('upcoming', ['$filter', function($filter) {

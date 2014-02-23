@@ -20,4 +20,4 @@ angular.module('datetimeFilter', [])
 		    }
 		    return filtered;
 		}
-	}])
+	}]);

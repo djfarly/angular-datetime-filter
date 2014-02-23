@@ -141,4 +141,11 @@ module.exports = function(grunt) {
     });
   });
 
+  // bump tasks
+  grunt.registerTask('version-patch', ['build', 'bump:patch']);
+  grunt.registerTask('version-minor', ['build', 'bump:minor']);
+  grunt.registerTask('version-major', ['build', 'bump:major']);
+  grunt.registerTask('version-build', ['build', 'bump:build']);
+  grunt.registerTask('version-git'  , ['build', 'bump:git']);
+
 };

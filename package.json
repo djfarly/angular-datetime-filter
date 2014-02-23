@@ -2,11 +2,11 @@
   "name": "angular-datetime-filter",
   "description": "Angular Datetime Filter",
   "version": "0.1.0",
-  "homepage": "",
+  "homepage": "https://github.com/djfarly/angular-datetime-filter",
   "author": "Jan Willem Henckel (djfarly)",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/djfarly/angular-datetime-filter"
   },
   "engines": {
     "node": ">= 0.8"

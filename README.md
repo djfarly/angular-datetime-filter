@@ -55,3 +55,40 @@ $scope.items = [
 Should result in:
 * 2014/01/02
 * 2014/10/03
+
+## Documentation
+
+>Angular module datetimeFilter
+
+###upcoming
+```html
+{{ filter_expression | upcoming : dateField }}
+```
+```javascript
+$filter('upcoming')(array, dateField)
+```
+__array__ `array` - The source array
+
+__dateField__ `string` (_optional_) - Which property is the datetime, defaults to none
+###past
+```html
+{{ filter_expression | past : dateField }}
+```
+```javascript
+$filter('past')(array, dateField)
+```
+__array__ `array` - The source array
+
+__dateField__ `string` (_optional_) - Which property is the datetime, defaults to none
+###datetimeFilter
+```html
+{{ filter_expression | datetimeFilter : dateField : mode }}
+```
+```javascript
+$filter('datetimeFilter')(array, dateField, mode)
+```
+__array__ `array` - The source array
+
+__dateField__ `string` (_optional_) - Which property is the datetime, defaults to none
+
+__mode__ `string` (_optional_) - Either 'past' or 'upcoming', defaults to 'upcoming'

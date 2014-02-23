@@ -1,6 +1,6 @@
 /**
  * Angular Datetime Filter
- * @version v0.1.2-5 - 2014-02-23
+ * @version v0.1.2-6 - 2014-02-23
  * @link https://github.com/djfarly/angular-datetime-filter
  * @author Jan Willem Henckel (djfarly)
  * @license MIT License, http://www.opensource.org/licenses/MIT

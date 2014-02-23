@@ -3,8 +3,26 @@ angular-datetime-filter
 
 AngularJS Datetime Filter
 
-> [AngularJS](angularjs.org) filters for filtering arrays.
-The filters may be used just like the native filter-filter. `| upcoming:date` filters for array-elements which have their property date in the future.
+[AngularJS](angularjs.org) filters for filtering arrays.
+The filters may be used just like the native filter-filter.
+
+`| __upcoming:date__` filters for array elements which date property is in the future.
+
+`| __past:date__` filters for array elements which date property is in the past.
+
+##Install
+Install with `bower`:
+```
+bower install angular-datetime-filter
+```
+Add a `<script>` to you `index.html`:
+```html
+<script src="/bower_components/angular-datetime-filter/dist/angular-datetime-filter.js"></script>
+```
+And add `datetimeFilter` as a dependency for your app:
+```javascript
+angular.module('myApp', ['datetimeFilter']);
+```
 
 ##How to use
 ###Array of objects
@@ -69,7 +87,7 @@ $filter('upcoming')(array, dateField)
 ```
 __array__ `array` - The source array
 
-__dateField__ `string` (_optional_) - Which property is the datetime, defaults to none
+__dateField__ `string` (_optional_) - the datetime property, defaults to none
 ###past
 ```html
 {{ filter_expression | past : dateField }}
@@ -79,7 +97,7 @@ $filter('past')(array, dateField)
 ```
 __array__ `array` - The source array
 
-__dateField__ `string` (_optional_) - Which property is the datetime, defaults to none
+__dateField__ `string` (_optional_) - the datetime property, defaults to none
 ###datetimeFilter
 ```html
 {{ filter_expression | datetimeFilter : dateField : mode }}
@@ -89,6 +107,6 @@ $filter('datetimeFilter')(array, dateField, mode)
 ```
 __array__ `array` - The source array
 
-__dateField__ `string` (_optional_) - Which property is the datetime, defaults to none
+__dateField__ `string` (_optional_) - the datetime property, defaults to none
 
 __mode__ `string` (_optional_) - Either 'past' or 'upcoming', defaults to 'upcoming'

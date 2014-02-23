@@ -14,7 +14,7 @@ $scope.items = [
     {'date': '2013/12/24', 'name': 'two'},
     {'date': '2014/10/03', 'name': 'three'},
     {'date': '2012/01/01', 'name': 'four'},
-    {'date': '1970/01/01', 'name': 'five'},
+    {'date': '1970/01/01', 'name': 'five'}
 ];
 ```
 ```html

@@ -96,7 +96,7 @@ module.exports = function(grunt) {
         commitFiles: ['-a'],
         tagName: 'v%VERSION%',
         tagMessage: 'version %VERSION%',
-        push: true
+        push: false
       }
     }
   });
